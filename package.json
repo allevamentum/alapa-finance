@@ -1,0 +1,12 @@
+{
+  "name": "alapa-finance",
+  "version": "1.0.0",
+  "description": "Alapa Finance — Leasing solutions in Kazakhstan",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

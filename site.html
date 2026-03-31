@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alapa Finance — Лизинговые решения в Казахстане</title>
+  <meta name="description" content="Alapa Finance LLP — лизинг модульных зданий, спецтехники, сельхозтехники и IT-оборудования по всему Казахстану. Финансовый, операционный лизинг и возвратный лизинг.">
+  <meta name="keywords" content="лизинг Казахстан, лизинг спецтехники, лизинг сельхозтехники, лизинг модульных зданий, IT лизинг, Alapa Finance">
+  <meta property="og:title" content="Alapa Finance — Лизинговые решения в Казахстане">
+  <meta property="og:description" content="Полный спектр лизинговых услуг: модульные здания, спецтехника, сельхозтехника, IT-оборудование.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alapa.finance">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/website.css">
+</head>
+<body>
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 27L30 42L48 27" stroke="url(#preG)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" class="preloader-chevron"/>
+        <defs>
+          <linearGradient id="preG" x1="12" y1="16" x2="48" y2="16">
+            <stop offset="0%" stop-color="#D4A87A"/>
+            <stop offset="50%" stop-color="#C8956C"/>
+            <stop offset="100%" stop-color="#D4A87A"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="navbar-logo" aria-label="Alapa Finance">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 16L18 28L33 16" stroke="url(#navG)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <line x1="11" y1="33" x2="25" y2="33" stroke="#C8956C" stroke-width="0.8" opacity="0.35"/>
+          <defs><linearGradient id="navG" x1="9" y1="6" x2="27" y2="6"><stop offset="0%" stop-color="#D4A87A"/><stop offset="50%" stop-color="#C8956C"/><stop offset="100%" stop-color="#D4A87A"/></linearGradient></defs>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-name">ALAPA</span>
+          <span class="logo-suffix">FINANCE</span>
+        </span>
+      </a>
+      <div class="navbar-menu" id="navbarMenu">
+        <a href="#services" class="nav-link" data-i18n="nav.services">Услуги</a>
+        <a href="#calculator" class="nav-link" data-i18n="nav.calculator">Калькулятор</a>
+        <a href="#process" class="nav-link" data-i18n="nav.process">Как это работает</a>
+        <a href="#programs" class="nav-link" data-i18n="nav.programs">Программы</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">О компании</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a>
+      </div>
+      <div class="navbar-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="kz">ҚЗ</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="#application" class="btn btn-primary btn-nav" data-i18n="nav.apply">Оставить заявку</a>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-glow-2"></div>
+      <div class="hero-geo" id="heroGeo"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1 class="hero-title" data-i18n="hero.title">Финансовые решения<br>для роста вашего<br><span class="text-gradient">бизнеса</span></h1>
+        <p class="hero-desc" data-i18n="hero.desc">Полный спектр лизинговых услуг для предприятий любого масштаба — от модульных зданий и спецтехники до IT-инфраструктуры. Работаем по всему Казахстану с 2020 года.</p>
+        <div class="hero-actions">
+          <a href="#application" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Получить расчёт</a>
+          <a href="#services" class="btn btn-outline btn-lg" data-i18n="hero.cta2">Наши услуги</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-value" data-count="5">0</span><span class="hero-stat-suffix">+</span>
+            <span class="hero-stat-label" data-i18n="hero.stat1">лет на рынке</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value" data-count="17">0</span>
+            <span class="hero-stat-label" data-i18n="hero.stat2">регионов Казахстана</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value" data-count="6">0</span>
+            <span class="hero-stat-label" data-i18n="hero.stat3">направлений лизинга</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">24/7</span>
+            <span class="hero-stat-label" data-i18n="hero.stat4">поддержка клиентов</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo-wrapper">
+          <svg class="hero-logo-svg" viewBox="0 0 420 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="heroChevronG" x1="100" y1="60" x2="320" y2="60">
+                <stop offset="0%" stop-color="#D4A87A"/>
+                <stop offset="50%" stop-color="#C8956C"/>
+                <stop offset="100%" stop-color="#D4A87A"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Decorative prism/triangle orbits — rotating, thicker -->
+            <g class="orbit-ring">
+              <polygon points="210,18 390,330 30,330" fill="none" stroke="#C8956C" stroke-width="0.8" opacity="0.08"/>
+              <circle cx="210" cy="18" r="3.5" fill="#C8956C" opacity="0.45"/>
+            </g>
+            <g class="orbit-ring-2">
+              <polygon points="210,350 70,95 350,95" fill="none" stroke="#C8956C" stroke-width="0.7" opacity="0.06"/>
+              <circle cx="70" cy="95" r="3" fill="#D4A87A" opacity="0.35"/>
+            </g>
+            <!-- Small accent prisms — thicker -->
+            <polygon points="210,60 255,140 165,140" fill="none" stroke="#C8956C" stroke-width="0.5" opacity="0.05" class="prism-accent"/>
+            <polygon points="320,175 365,255 275,255" fill="none" stroke="#C8956C" stroke-width="0.5" opacity="0.05" class="prism-accent-2"/>
+            <polygon points="100,175 145,255 55,255" fill="none" stroke="#C8956C" stroke-width="0.5" opacity="0.05" class="prism-accent-3"/>
+
+            <!-- Glow layer -->
+            <path d="M87 127L210 230L333 127" stroke="url(#heroChevronG)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.12" class="logo-chevron-glow"/>
+            <!-- Main chevron — exact 100°, bold stroke, raised -->
+            <path d="M87 127L210 230L333 127" stroke="url(#heroChevronG)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" class="logo-chevron-path"/>
+            <!-- Premium horizontal line — thicker, gradient -->
+            <line x1="120" y1="270" x2="300" y2="270" stroke="url(#heroChevronG)" stroke-width="1.5" opacity="0.45" class="logo-h-line"/>
+            <line x1="145" y1="274" x2="275" y2="274" stroke="#C8956C" stroke-width="0.6" opacity="0.18" class="logo-h-line"/>
+            <!-- ALAPA — below the chevron -->
+            <text class="logo-letter" data-idx="0" x="108" y="310" fill="white" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="4">A</text>
+            <text class="logo-letter" data-idx="1" x="148" y="310" fill="white" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="4">L</text>
+            <text class="logo-letter" data-idx="2" x="181" y="310" fill="white" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="4">A</text>
+            <text class="logo-letter" data-idx="3" x="224" y="310" fill="white" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="4">P</text>
+            <text class="logo-letter" data-idx="4" x="264" y="310" fill="white" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="4">A</text>
+            <text x="210" y="338" text-anchor="middle" fill="#C8956C" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="500" font-size="13" letter-spacing="9" class="logo-text-finance">FINANCE</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="services.tag">Услуги</span>
+        <h2 class="section-title" data-i18n="services.title">Полный спектр лизинговых решений</h2>
+        <p class="section-desc" data-i18n="services.desc">Мы предоставляем все виды лизинга в соответствии с законодательством Республики Казахстан, включая финансовый, операционный и возвратный лизинг.</p>
+      </div>
+
+      <!-- Service Categories -->
+      <div class="services-grid stagger-reveal">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none">
+              <rect x="4" y="24" width="20" height="28" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="28" y="16" width="24" height="36" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="8" y="28" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="15" y="28" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="8" y="36" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="15" y="36" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="32" y="20" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="42" y="20" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="32" y="30" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="42" y="30" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="32" y="40" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="42" y="40" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 24V12h8v12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="service-title" data-i18n="services.s1.title">Модульные здания</h3>
+          <p class="service-text" data-i18n="services.s1.text">Быстровозводимые и модульные конструкции: вахтовые городки, административные здания, блок-контейнеры, мобильные офисы и жилые комплексы.</p>
+          <ul class="service-list">
+            <li data-i18n="services.s1.l1">Вахтовые городки</li>
+            <li data-i18n="services.s1.l2">Модульные офисы</li>
+            <li data-i18n="services.s1.l3">Блок-контейнеры</li>
+            <li data-i18n="services.s1.l4">Быстровозводимые конструкции</li>
+          </ul>
+          <a href="#application" class="service-link" data-i18n="services.learnMore">Подробнее →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none">
+              <rect x="6" y="28" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="12" cy="46" r="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="46" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M30 34h10l6 10h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="42" cy="46" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 28L14 12h12l6 16" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M14 12V6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title" data-i18n="services.s2.title">Спецтехника</h3>
+          <p class="service-text" data-i18n="services.s2.text">Строительная, дорожная и промышленная техника: экскаваторы, бульдозеры, автокраны, погрузчики, буровые установки.</p>
+          <ul class="service-list">
+            <li data-i18n="services.s2.l1">Строительная техника</li>
+            <li data-i18n="services.s2.l2">Дорожная техника</li>
+            <li data-i18n="services.s2.l3">Погрузчики и краны</li>
+            <li data-i18n="services.s2.l4">Буровые установки</li>
+          </ul>
+          <a href="#application" class="service-link" data-i18n="services.learnMore">Подробнее →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none">
+              <path d="M8 44h40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="16" y="30" width="24" height="14" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="22" cy="46" r="3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="34" cy="46" r="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M22 30V18c0-2 2-4 6-4h4c2 0 4 1 4 4v12" stroke="currentColor" stroke-width="2"/>
+              <path d="M28 14V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 8h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 36h6M40 36h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title" data-i18n="services.s3.title">Сельхозтехника</h3>
+          <p class="service-text" data-i18n="services.s3.text">Комбайны, тракторы, сеялки, опрыскиватели, зерноочистительные комплексы и другое оборудование для АПК.</p>
+          <ul class="service-list">
+            <li data-i18n="services.s3.l1">Тракторы и комбайны</li>
+            <li data-i18n="services.s3.l2">Посевные комплексы</li>
+            <li data-i18n="services.s3.l3">Зернохранилища</li>
+            <li data-i18n="services.s3.l4">Ирригационные системы</li>
+          </ul>
+          <a href="#application" class="service-link" data-i18n="services.learnMore">Подробнее →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none">
+              <rect x="8" y="10" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 14h40" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="20" y="38" width="16" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 42h24v4H16z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <rect x="14" y="20" width="10" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="28" y="20" width="14" height="3" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="28" y="26" width="10" height="3" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="1" fill="currentColor"/>
+              <circle cx="16" cy="12" r="1" fill="currentColor"/>
+              <circle cx="20" cy="12" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-title" data-i18n="services.s4.title">IT и телеком</h3>
+          <p class="service-text" data-i18n="services.s4.text">Серверное оборудование, компьютерная техника, телекоммуникационное оборудование, сетевая инфраструктура и ЦОД.</p>
+          <ul class="service-list">
+            <li data-i18n="services.s4.l1">Серверы и СХД</li>
+            <li data-i18n="services.s4.l2">Рабочие станции</li>
+            <li data-i18n="services.s4.l3">Телеком-оборудование</li>
+            <li data-i18n="services.s4.l4">Сетевая инфраструктура</li>
+          </ul>
+          <a href="#application" class="service-link" data-i18n="services.learnMore">Подробнее →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none">
+              <rect x="8" y="16" width="40" height="30" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 24h40" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 8h16v8H20z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <rect x="14" y="30" width="12" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 34h12" stroke="currentColor" stroke-width="1"/>
+              <path d="M32 30h8M32 34h10M32 38h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title" data-i18n="services.s5.title">Промышленное оборудование</h3>
+          <p class="service-text" data-i18n="services.s5.text">Производственные линии, станки, энергетическое оборудование, оборудование для пищевой и горнодобывающей промышленности.</p>
+          <ul class="service-list">
+            <li data-i18n="services.s5.l1">Производственные линии</li>
+            <li data-i18n="services.s5.l2">Станки с ЧПУ</li>
+            <li data-i18n="services.s5.l3">Энергооборудование</li>
+            <li data-i18n="services.s5.l4">Горнодобывающее оборудование</li>
+          </ul>
+          <a href="#application" class="service-link" data-i18n="services.learnMore">Подробнее →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="20" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M28 16v12l8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 8l-4-4M36 8l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 28a12 12 0 0 1 24 0" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title" data-i18n="services.s6.title">Возвратный лизинг</h3>
+          <p class="service-text" data-i18n="services.s6.text">Высвобождение оборотных средств путём продажи имущества лизинговой компании с последующей арендой. Оптимизация баланса предприятия.</p>
+          <ul class="service-list">
+            <li data-i18n="services.s6.l1">Высвобождение капитала</li>
+            <li data-i18n="services.s6.l2">Оптимизация баланса</li>
+            <li data-i18n="services.s6.l3">Налоговые преимущества</li>
+            <li data-i18n="services.s6.l4">Гибкие условия</li>
+          </ul>
+          <a href="#application" class="service-link" data-i18n="services.learnMore">Подробнее →</a>
+        </div>
+      </div>
+
+      <!-- Leasing Types -->
+      <div class="leasing-types" data-aos="fade-up">
+        <h3 class="leasing-types-title" data-i18n="services.typesTitle">Виды лизинга</h3>
+        <div class="leasing-types-grid">
+          <div class="lease-type">
+            <div class="lease-type-icon">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M6 26V10l10-6 10 6v16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="12" y="18" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h4 data-i18n="services.type1.title">Финансовый лизинг</h4>
+            <p data-i18n="services.type1.text">Приобретение имущества с переходом права собственности по окончании договора. Срок лизинга приближен к сроку полезного использования.</p>
+          </div>
+          <div class="lease-type">
+            <div class="lease-type-icon">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M4 16a12 12 0 1 1 24 0 12 12 0 0 1-24 0z" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 data-i18n="services.type2.title">Операционный лизинг</h4>
+            <p data-i18n="services.type2.text">Аренда имущества без обязательного выкупа. Идеально для оборудования с быстрым моральным устареванием — IT-техника, транспорт.</p>
+          </div>
+          <div class="lease-type">
+            <div class="lease-type-icon">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M8 24l8-16 8 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 20h12" stroke="currentColor" stroke-width="2"/><path d="M16 4v4M4 28h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 data-i18n="services.type3.title">Возвратный лизинг</h4>
+            <p data-i18n="services.type3.text">Продажа собственного имущества лизингодателю с заключением договора лизинга. Эффективный инструмент рефинансирования.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALCULATOR ===== -->
+  <section id="calculator" class="calculator">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="calc.tag">Калькулятор</span>
+        <h2 class="section-title" data-i18n="calc.title">Рассчитайте стоимость лизинга</h2>
+        <p class="section-desc" data-i18n="calc.desc">Предварительный расчёт лизинговых платежей. Точные условия определяются индивидуально после рассмотрения заявки.</p>
+      </div>
+      <div class="calc-container" data-aos="fade-up">
+        <div class="calc-form">
+          <div class="calc-field">
+            <label data-i18n="calc.amount">Стоимость имущества (₸)</label>
+            <input type="range" id="calcAmount" min="1000000" max="500000000" value="50000000" step="1000000">
+            <div class="calc-range-labels">
+              <span>1 000 000 ₸</span>
+              <output id="calcAmountValue">50 000 000 ₸</output>
+              <span>500 000 000 ₸</span>
+            </div>
+          </div>
+          <div class="calc-field">
+            <label data-i18n="calc.advance">Авансовый платёж (%)</label>
+            <input type="range" id="calcAdvance" min="10" max="49" value="20" step="1">
+            <div class="calc-range-labels">
+              <span>10%</span>
+              <output id="calcAdvanceValue">20%</output>
+              <span>49%</span>
+            </div>
+          </div>
+          <div class="calc-field">
+            <label data-i18n="calc.term">Срок лизинга (месяцы)</label>
+            <input type="range" id="calcTerm" min="12" max="84" value="36" step="6">
+            <div class="calc-range-labels">
+              <span>12</span>
+              <output id="calcTermValue">36</output>
+              <span>84</span>
+            </div>
+          </div>
+          <div class="calc-field">
+            <label data-i18n="calc.type">Тип лизинга</label>
+            <div class="calc-radio-group">
+              <label class="calc-radio">
+                <input type="radio" name="leaseType" value="financial" checked>
+                <span data-i18n="calc.financial">Финансовый</span>
+              </label>
+              <label class="calc-radio">
+                <input type="radio" name="leaseType" value="operational">
+                <span data-i18n="calc.operational">Операционный</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="calc-results">
+          <div class="calc-result-card main">
+            <span class="calc-result-label" data-i18n="calc.monthly">Ежемесячный платёж</span>
+            <span class="calc-result-value" id="calcMonthly">0 ₸</span>
+          </div>
+          <div class="calc-result-card">
+            <span class="calc-result-label" data-i18n="calc.advanceAmount">Авансовый платёж</span>
+            <span class="calc-result-value" id="calcAdvanceAmount">0 ₸</span>
+          </div>
+          <div class="calc-result-card">
+            <span class="calc-result-label" data-i18n="calc.totalPayments">Общая сумма выплат</span>
+            <span class="calc-result-value" id="calcTotal">0 ₸</span>
+          </div>
+          <div class="calc-result-card">
+            <span class="calc-result-label" data-i18n="calc.overpayment">Удорожание</span>
+            <span class="calc-result-value" id="calcOverpay">0%</span>
+          </div>
+          <a href="#application" class="btn btn-primary btn-block" data-i18n="calc.apply">Оставить заявку с этими параметрами</a>
+          <p class="calc-disclaimer" data-i18n="calc.disclaimer">* Расчёт является предварительным и не является публичной офертой. Окончательные условия определяются после рассмотрения заявки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="process.tag">Процесс</span>
+        <h2 class="section-title" data-i18n="process.title">Как получить лизинг</h2>
+        <p class="section-desc" data-i18n="process.desc">Прозрачный и быстрый процесс от заявки до получения имущества</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3 data-i18n="process.s1.title">Заявка</h3>
+            <p data-i18n="process.s1.text">Заполните онлайн-заявку или свяжитесь с нами. Укажите тип имущества, желаемые сроки и условия.</p>
+          </div>
+          <div class="step-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="4" width="24" height="32" rx="3" stroke="currentColor" stroke-width="2"/><path d="M14 14h12M14 20h12M14 26h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3 data-i18n="process.s2.title">Анализ</h3>
+            <p data-i18n="process.s2.text">Наши эксперты оценивают заявку, проводят финансовый анализ и подбирают оптимальные условия лизинга.</p>
+          </div>
+          <div class="step-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="18" cy="18" r="10" stroke="currentColor" stroke-width="2"/><path d="M26 26l8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M14 18h8M18 14v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3 data-i18n="process.s3.title">Одобрение</h3>
+            <p data-i18n="process.s3.text">Принятие решения и согласование условий договора. Оформление всех необходимых документов.</p>
+          </div>
+          <div class="step-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/><path d="M13 20l5 5 9-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3 data-i18n="process.s4.title">Поставка</h3>
+            <p data-i18n="process.s4.text">Приобретение и поставка имущества лизингополучателю. Начало использования оборудования.</p>
+          </div>
+          <div class="step-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="16" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M24 22h8l4 8H24z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="32" r="3" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="32" r="3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ADVANTAGES ===== -->
+  <section class="advantages">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="adv.tag">Преимущества</span>
+        <h2 class="section-title" data-i18n="adv.title">Почему Alapa Finance</h2>
+      </div>
+      <div class="advantages-grid stagger-reveal">
+        <div class="advantage-card">
+          <div class="adv-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 4l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h4 data-i18n="adv.a1.title">Индивидуальный подход</h4>
+          <p data-i18n="adv.a1.text">Гибкие графики платежей, адаптированные под сезонность бизнеса и денежные потоки.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="adv-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M6 34V20l14-14 14 14v14H6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="16" y="24" width="8" height="10" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h4 data-i18n="adv.a2.title">Быстрые решения</h4>
+          <p data-i18n="adv.a2.text">Рассмотрение заявки от 1 рабочего дня. Минимальный пакет документов.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="adv-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4 data-i18n="adv.a3.title">Полное покрытие РК</h4>
+          <p data-i18n="adv.a3.text">Работаем во всех 17 регионах Казахстана — от Атырау до Усть-Каменогорска.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="adv-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="8" width="28" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M6 16h28" stroke="currentColor" stroke-width="2"/><path d="M12 24h6M12 28h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4 data-i18n="adv.a4.title">Налоговые выгоды</h4>
+          <p data-i18n="adv.a4.text">Лизинговые платежи полностью относятся на себестоимость, снижая налогооблагаемую базу.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="adv-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 6v28M12 12l8-6 8 6M12 28l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4 data-i18n="adv.a5.title">Без залога</h4>
+          <p data-i18n="adv.a5.text">Предмет лизинга сам является обеспечением сделки. Не нужно предоставлять дополнительный залог.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="adv-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 4a16 16 0 1 1 0 32 16 16 0 0 1 0-32z" stroke="currentColor" stroke-width="2"/><path d="M20 12v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4 data-i18n="adv.a6.title">Экспертиза с 2020</h4>
+          <p data-i18n="adv.a6.text">5+ лет опыта в лизинге на рынке Казахстана. Понимаем специфику каждой отрасли.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GOVERNMENT PROGRAMS ===== -->
+  <section id="programs" class="programs">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="prog.tag">Программы</span>
+        <h2 class="section-title" data-i18n="prog.title">Государственные программы поддержки</h2>
+        <p class="section-desc" data-i18n="prog.desc">Мы активно развиваем сотрудничество с государственными институтами развития для предоставления льготных условий лизинга.</p>
+      </div>
+      <div class="programs-grid stagger-reveal">
+        <div class="program-card">
+          <div class="program-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l20 12v4H4v-4L24 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="8" y="20" width="4" height="18" rx="1" stroke="currentColor" stroke-width="2"/><rect x="16" y="20" width="4" height="18" rx="1" stroke="currentColor" stroke-width="2"/><rect x="28" y="20" width="4" height="18" rx="1" stroke="currentColor" stroke-width="2"/><rect x="36" y="20" width="4" height="18" rx="1" stroke="currentColor" stroke-width="2"/><rect x="4" y="38" width="40" height="6" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h4 data-i18n="prog.p1.title">«Бизнестің жол картасы — 2025»</h4>
+          <p data-i18n="prog.p1.text">Государственная программа поддержки предпринимательства: субсидирование ставки вознаграждения и гарантирование по договорам лизинга.</p>
+          <span class="program-status" data-i18n="prog.coming">Перспективное направление</span>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-8 0-16 4-16 16s8 16 16 16 16-4 16-16S32 8 24 8z" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 4v4M24 40v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4 data-i18n="prog.p2.title">НУХ «Байтерек»</h4>
+          <p data-i18n="prog.p2.text">Фондирование через институты развития холдинга «Байтерек» для финансирования приоритетных отраслей экономики.</p>
+          <span class="program-status" data-i18n="prog.coming">Перспективное направление</span>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V18L24 8l16 10v22" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 40V28h16v12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 28v12M16 34h16" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="20" r="4" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h4 data-i18n="prog.p3.title">КазАгроФинанс</h4>
+          <p data-i18n="prog.p3.text">Партнёрство для субсидирования лизинга сельхозтехники и оборудования для предприятий агропромышленного комплекса.</p>
+          <span class="program-status" data-i18n="prog.coming">Перспективное направление</span>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M6 18h36" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="30" r="4" stroke="currentColor" stroke-width="2"/><path d="M22 28h14M22 34h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4 data-i18n="prog.p4.title">Фонд «Даму»</h4>
+          <p data-i18n="prog.p4.text">Сотрудничество в рамках программ гарантирования и субсидирования для субъектов малого и среднего бизнеса.</p>
+          <span class="program-status" data-i18n="prog.coming">Перспективное направление</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid" data-aos="fade-up">
+        <div class="about-content">
+          <span class="section-tag" data-i18n="about.tag">О компании</span>
+          <h2 class="section-title" data-i18n="about.title">Alapa Finance LLP</h2>
+          <p class="about-lead" data-i18n="about.lead">Компания основана в 2020 году с миссией сделать лизинг доступным инструментом развития для бизнеса любого масштаба в Казахстане.</p>
+          <p data-i18n="about.p1">Мы специализируемся на лизинге модульных зданий, специализированной техники, сельскохозяйственного оборудования и IT-инфраструктуры. Наши клиенты — предприятия крупного, среднего и малого бизнеса, агрохолдинги, квазигосударственные компании и местные исполнительные органы.</p>
+          <p data-i18n="about.p2">Alapa Finance работает в строгом соответствии с законодательством Республики Казахстан о финансовом лизинге, предоставляя полный спектр лизинговых услуг — финансовый, операционный и возвратный лизинг.</p>
+          <div class="about-numbers">
+            <div class="about-num">
+              <span class="about-num-value" data-count="2020">2020</span>
+              <span class="about-num-label" data-i18n="about.n1">Год основания</span>
+            </div>
+            <div class="about-num">
+              <span class="about-num-value">17</span>
+              <span class="about-num-label" data-i18n="about.n2">Регионов РК</span>
+            </div>
+            <div class="about-num">
+              <span class="about-num-value">6</span>
+              <span class="about-num-label" data-i18n="about.n3">Направлений</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-map">
+            <svg viewBox="0 0 800 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="map-svg" id="kzMap">
+              <defs>
+                <linearGradient id="mapG" x1="0" y1="0" x2="800" y2="380">
+                  <stop offset="0%" stop-color="#C8956C" stop-opacity="0.12"/>
+                  <stop offset="100%" stop-color="#C8956C" stop-opacity="0.03"/>
+                </linearGradient>
+                <filter id="mapGlow">
+                  <feGaussianBlur stdDeviation="3"/>
+                </filter>
+              </defs>
+              <!-- Real Kazakhstan outline from GeoJSON -->
+              <path class="map-outline" d="M471.7,311.8L461.3,315.8L437.5,330.6L429.5,345.8L422.8,345.9L417.8,335.9L394.8,335.2L391.1,317.8L382.3,317.6L383.7,296.3L362.0,280.8L331.0,282.4L309.8,285.5L292.5,266.4L277.7,258.3L249.6,243.1L246.2,241.3L199.7,253.8L200.4,332.2L191.1,333.2L178.4,316.6L166.2,310.6L145.7,315.0L137.7,322.1L136.6,316.9L141.1,308.1L137.6,300.7L116.7,293.4L108.5,274.3L98.5,269.0L97.9,262.0L115.5,264.1L116.2,248.5L131.6,245.1L147.4,248.2L150.7,227.5L147.4,214.4L129.3,215.4L113.9,210.2L93.0,219.6L76.1,224.0L66.9,220.6L68.8,209.6L57.2,195.4L43.8,196.0L28.4,181.6L38.9,165.5L33.6,161.2L48.0,137.8L66.6,150.2L68.9,134.6L106.3,111.5L134.5,111.0L174.4,125.7L195.8,134.3L215.0,125.3L243.7,124.9L266.9,135.9L272.1,129.6L297.5,130.5L302.1,120.5L272.7,105.8L290.1,95.5L286.7,89.7L304.1,84.2L291.0,69.6L299.3,62.4L367.0,55.0L375.9,49.7L421.2,41.9L437.4,33.1L469.9,37.6L475.6,59.7L494.5,54.5L517.8,61.7L516.3,73.3L533.6,72.1L579.0,52.1L572.4,58.7L595.4,75.2L635.9,129.1L645.5,118.0L670.5,130.2L696.5,124.8L706.4,128.6L715.2,140.9L727.8,145.0L735.5,154.0L758.8,151.2L768.4,164.2L754.6,178.3L739.6,180.3L738.8,201.6L728.7,211.2L692.8,204.2L679.7,242.3L670.5,247.0L634.6,255.5L650.9,292.4L638.5,297.9L639.9,310.1L628.8,306.9L619.7,299.3L592.9,297.1L562.9,296.5L556.3,298.8L530.5,289.9L520.2,294.3L517.4,306.9L487.7,299.5L475.8,302.5L471.7,311.8Z"
+                stroke="#C8956C" stroke-width="2" fill="url(#mapG)"/>
+              <!-- City connection lines -->
+              <line x1="480.2" y1="123.5" x2="580.0" y2="291.1" stroke="#C8956C" stroke-width="0.5" opacity="0.15" stroke-dasharray="4 4"/>
+              <line x1="480.2" y1="123.5" x2="510.4" y2="151.8" stroke="#C8956C" stroke-width="0.5" opacity="0.15" stroke-dasharray="4 4"/>
+              <line x1="480.2" y1="123.5" x2="222.8" y2="141.1" stroke="#C8956C" stroke-width="0.5" opacity="0.15" stroke-dasharray="4 4"/>
+              <!-- City markers with pulse -->
+              <g class="map-city" data-delay="0">
+                <circle cx="480.2" cy="123.5" r="7" fill="#C8956C" opacity="0.15" class="map-city-pulse"/>
+                <circle cx="480.2" cy="123.5" r="5" fill="#D4A843"/>
+                <text x="480.2" y="113" fill="#D4A843" font-size="11" text-anchor="middle" font-weight="600" font-family="'Space Grotesk', sans-serif">Астана</text>
+              </g>
+              <g class="map-city" data-delay="200">
+                <circle cx="580.0" cy="291.1" r="7" fill="#C8956C" opacity="0.15" class="map-city-pulse"/>
+                <circle cx="580.0" cy="291.1" r="5" fill="#C8956C"/>
+                <text x="580.0" y="281" fill="#94a3b8" font-size="10" text-anchor="middle" font-family="'Space Grotesk', sans-serif">Алматы</text>
+              </g>
+              <g class="map-city" data-delay="400">
+                <circle cx="447.0" cy="310.7" r="4" fill="#C8956C"/>
+                <text x="447.0" y="326" fill="#94a3b8" font-size="9" text-anchor="middle">Шымкент</text>
+              </g>
+              <g class="map-city" data-delay="600">
+                <circle cx="222.8" cy="141.1" r="4" fill="#C8956C"/>
+                <text x="222.8" y="156" fill="#94a3b8" font-size="9" text-anchor="middle">Актобе</text>
+              </g>
+              <g class="map-city" data-delay="800">
+                <circle cx="510.4" cy="151.8" r="4" fill="#C8956C"/>
+                <text x="510.4" y="167" fill="#94a3b8" font-size="9" text-anchor="middle">Караганда</text>
+              </g>
+              <g class="map-city" data-delay="1000">
+                <circle cx="126.4" cy="209.1" r="4" fill="#C8956C"/>
+                <text x="126.4" y="224" fill="#94a3b8" font-size="9" text-anchor="middle">Атырау</text>
+              </g>
+              <g class="map-city" data-delay="1200">
+                <circle cx="682.5" cy="148.6" r="3.5" fill="#C8956C"/>
+                <text x="682.5" y="164" fill="#94a3b8" font-size="9" text-anchor="middle">Өскемен</text>
+              </g>
+              <g class="map-city" data-delay="1400">
+                <circle cx="580.0" cy="98.8" r="3.5" fill="#C8956C"/>
+                <text x="580.0" y="92" fill="#94a3b8" font-size="9" text-anchor="middle">Павлодар</text>
+              </g>
+              <g class="map-city" data-delay="1600">
+                <circle cx="339.0" cy="79.3" r="3.5" fill="#C8956C"/>
+                <text x="339.0" y="73" fill="#94a3b8" font-size="9" text-anchor="middle">Қостанай</text>
+              </g>
+              <g class="map-city" data-delay="1800">
+                <circle cx="113.2" cy="282.4" r="3.5" fill="#C8956C"/>
+                <text x="113.2" y="298" fill="#94a3b8" font-size="9" text-anchor="middle">Ақтау</text>
+              </g>
+            </svg>
+          </div>
+          <div class="about-map-label" data-i18n="about.mapLabel">Покрытие по всему Казахстану</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEGISLATION ===== -->
+  <section class="legislation">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="law.tag">Правовая база</span>
+        <h2 class="section-title" data-i18n="law.title">Нормативное регулирование</h2>
+      </div>
+      <div class="law-grid stagger-reveal">
+        <div class="law-card">
+          <div class="law-icon">§</div>
+          <h4 data-i18n="law.l1.title">Закон РК «О финансовом лизинге»</h4>
+          <p data-i18n="law.l1.text">Основной закон, регулирующий лизинговую деятельность в Казахстане. Определяет права и обязанности сторон договора лизинга.</p>
+        </div>
+        <div class="law-card">
+          <div class="law-icon">§</div>
+          <h4 data-i18n="law.l2.title">Гражданский кодекс РК</h4>
+          <p data-i18n="law.l2.text">Глава о лизинге (финансовой аренде). Устанавливает общие правила и нормы для договорных отношений.</p>
+        </div>
+        <div class="law-card">
+          <div class="law-icon">§</div>
+          <h4 data-i18n="law.l3.title">Налоговый кодекс РК</h4>
+          <p data-i18n="law.l3.text">Налоговые преференции по лизинговым операциям. Отнесение платежей на вычеты, особенности НДС и КПН.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="faq.tag">FAQ</span>
+        <h2 class="section-title" data-i18n="faq.title">Часто задаваемые вопросы</h2>
+      </div>
+      <div class="faq-list stagger-reveal">
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq.q1">Какие документы нужны для получения лизинга?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.a1">Стандартный пакет включает: учредительные документы компании, финансовую отчётность за последние 2-3 года, справку об отсутствии налоговой задолженности, бизнес-план (для крупных проектов). Для субъектов МСБ — упрощённый пакет документов.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq.q2">Каков минимальный авансовый платёж?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.a2">Минимальный авансовый платёж составляет от 10% в зависимости от типа имущества, финансового состояния лизингополучателя и срока договора. Стандартный аванс — 20-30%.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq.q3">На какой срок можно оформить лизинг?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.a3">Срок финансового лизинга — от 12 до 84 месяцев, в зависимости от вида имущества и его срока полезного использования. Операционный лизинг — от 12 до 60 месяцев.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq.q4">Кто является собственником имущества во время лизинга?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.a4">В течение срока действия договора имущество находится на балансе лизингодателя (Alapa Finance). По окончании договора финансового лизинга и выплате всех платежей, право собственности переходит к лизингополучателю.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq.q5">Можно ли досрочно выкупить предмет лизинга?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.a5">Да, досрочный выкуп возможен в соответствии с условиями договора. Как правило, досрочный выкуп доступен после определённого периода (обычно не менее 12 месяцев) при условии выплаты остаточной стоимости.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq.q6">Какие налоговые преимущества даёт лизинг?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.a6">Лизинговые платежи полностью включаются в себестоимость и относятся на расходы. НДС по лизинговым платежам подлежит зачёту. Имущество учитывается на балансе лизингодателя, что не увеличивает стоимость основных средств лизингополучателя.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPLICATION FORM ===== -->
+  <section id="application" class="application">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="app.tag">Заявка</span>
+        <h2 class="section-title" data-i18n="app.title">Оставить заявку на лизинг</h2>
+        <p class="section-desc" data-i18n="app.desc">Заполните форму и наш специалист свяжется с вами в течение 1 рабочего дня</p>
+      </div>
+      <form class="app-form" id="applicationForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="appName" data-i18n="app.name">Наименование компании *</label>
+            <input type="text" id="appName" required placeholder="ТОО «Ваша компания»">
+          </div>
+          <div class="form-group">
+            <label for="appBin" data-i18n="app.bin">БИН *</label>
+            <input type="text" id="appBin" required placeholder="12-значный БИН" maxlength="12" pattern="[0-9]{12}">
+          </div>
+          <div class="form-group">
+            <label for="appContact" data-i18n="app.contact">Контактное лицо *</label>
+            <input type="text" id="appContact" required placeholder="Фамилия Имя Отчество">
+          </div>
+          <div class="form-group">
+            <label for="appPhone" data-i18n="app.phone">Телефон *</label>
+            <input type="tel" id="appPhone" required placeholder="+7 (___) ___ __ __">
+          </div>
+          <div class="form-group">
+            <label for="appEmail" data-i18n="app.email">Email *</label>
+            <input type="email" id="appEmail" required placeholder="info@company.kz">
+          </div>
+          <div class="form-group">
+            <label for="appRegion" data-i18n="app.region">Регион</label>
+            <select id="appRegion">
+              <option value="" data-i18n="app.selectRegion">Выберите регион</option>
+              <option value="almaty">Алматы</option>
+              <option value="astana">Астана</option>
+              <option value="shymkent">Шымкент</option>
+              <option value="almatinskaya">Алматинская область</option>
+              <option value="akmolinskaya">Акмолинская область</option>
+              <option value="aktobinskaya">Актюбинская область</option>
+              <option value="atirauskaya">Атырауская область</option>
+              <option value="vko">Восточно-Казахстанская область</option>
+              <option value="zhambilskaya">Жамбылская область</option>
+              <option value="zko">Западно-Казахстанская область</option>
+              <option value="karagandinskaya">Карагандинская область</option>
+              <option value="kostanayskaya">Костанайская область</option>
+              <option value="kizilordinskaya">Кызылординская область</option>
+              <option value="mangistauskaya">Мангистауская область</option>
+              <option value="pavlodarskaya">Павлодарская область</option>
+              <option value="sko">Северо-Казахстанская область</option>
+              <option value="turkestan">Туркестанская область</option>
+              <option value="abay">Область Абай</option>
+              <option value="jetisu">Область Жетісу</option>
+              <option value="ulitau">Область Ұлытау</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="appType" data-i18n="app.leaseType">Тип лизинга</label>
+            <select id="appType">
+              <option value="financial" data-i18n="app.typeFinancial">Финансовый лизинг</option>
+              <option value="operational" data-i18n="app.typeOperational">Операционный лизинг</option>
+              <option value="leaseback" data-i18n="app.typeLeaseback">Возвратный лизинг</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="appCategory" data-i18n="app.category">Категория имущества</label>
+            <select id="appCategory">
+              <option value="" data-i18n="app.selectCategory">Выберите категорию</option>
+              <option value="modular" data-i18n="app.catModular">Модульные здания</option>
+              <option value="special" data-i18n="app.catSpecial">Спецтехника</option>
+              <option value="agro" data-i18n="app.catAgro">Сельхозтехника</option>
+              <option value="it" data-i18n="app.catIT">IT и телеком</option>
+              <option value="industrial" data-i18n="app.catIndustrial">Промышленное оборудование</option>
+              <option value="other" data-i18n="app.catOther">Другое</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="appAmount" data-i18n="app.estimatedAmount">Ориентировочная стоимость имущества (₸)</label>
+            <input type="text" id="appAmount" placeholder="50 000 000">
+          </div>
+          <div class="form-group full-width">
+            <label for="appDesc" data-i18n="app.description">Описание имущества</label>
+            <textarea id="appDesc" rows="4" placeholder="Опишите оборудование или имущество, которое планируете приобрести в лизинг"></textarea>
+          </div>
+        </div>
+        <div class="form-consent">
+          <label class="checkbox-label">
+            <input type="checkbox" required id="appConsent">
+            <span data-i18n="app.consent">Я согласен на обработку персональных данных в соответствии с Законом РК «О персональных данных и их защите»</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="app.submit">Отправить заявку</button>
+      </form>
+      <div class="form-success" id="formSuccess" style="display:none">
+        <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="36" stroke="#10B981" stroke-width="3"/><path d="M24 40l10 10 22-22" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="app.successTitle">Заявка отправлена!</h3>
+        <p data-i18n="app.successText">Наш специалист свяжется с вами в течение 1 рабочего дня.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag" data-i18n="contact.tag">Контакты</span>
+          <h2 class="section-title" data-i18n="contact.title">Свяжитесь с нами</h2>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="contact.phone">Телефон</strong>
+                <a href="tel:+77001234567">+7 (700) 123-45-67</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@alapa.finance">info@alapa.finance</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="contact.address">Адрес</strong>
+                <span data-i18n="contact.addressText">Республика Казахстан<br>г. Алматы</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="contact.hours">Режим работы</strong>
+                <span data-i18n="contact.hoursText">Пн—Пт: 9:00 — 18:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <div class="cta-card">
+            <h3 data-i18n="contact.ctaTitle">Нужна консультация?</h3>
+            <p data-i18n="contact.ctaText">Наши эксперты по лизингу готовы ответить на ваши вопросы и помочь подобрать оптимальное решение.</p>
+            <a href="tel:+77001234567" class="btn btn-primary btn-lg" data-i18n="contact.ctaBtn">Позвонить</a>
+            <div class="cta-socials">
+              <a href="#" class="social-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="currentColor"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.5"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 3L1 11l7 2.5M21 3l-6 18-6-8.5M21 3L8 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 16L18 28L33 16" stroke="#C8956C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <line x1="11" y1="33" x2="25" y2="33" stroke="#C8956C" stroke-width="0.8" opacity="0.35"/>
+            </svg>
+            <span class="logo-text">
+              <span class="logo-name">ALAPA</span>
+              <span class="logo-suffix">FINANCE</span>
+            </span>
+          </a>
+          <p class="footer-desc" data-i18n="footer.desc">Лизинговые решения для бизнеса в Казахстане. Модульные здания, спецтехника, сельхозтехника, IT-оборудование.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.services">Услуги</h4>
+          <a href="#services" data-i18n="services.s1.title">Модульные здания</a>
+          <a href="#services" data-i18n="services.s2.title">Спецтехника</a>
+          <a href="#services" data-i18n="services.s3.title">Сельхозтехника</a>
+          <a href="#services" data-i18n="services.s4.title">IT и телеком</a>
+          <a href="#services" data-i18n="services.s5.title">Промышленное оборудование</a>
+          <a href="#services" data-i18n="services.s6.title">Возвратный лизинг</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.company">Компания</h4>
+          <a href="#about" data-i18n="nav.about">О компании</a>
+          <a href="#programs" data-i18n="nav.programs">Программы</a>
+          <a href="#calculator" data-i18n="nav.calculator">Калькулятор</a>
+          <a href="#application" data-i18n="nav.apply">Оставить заявку</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Правовая информация</h4>
+          <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+          <a href="#" data-i18n="footer.terms">Пользовательское соглашение</a>
+          <a href="#" data-i18n="footer.disclosure">Раскрытие информации</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2020–2026 Alapa Finance LLP. <span data-i18n="footer.rights">Все права защищены.</span></p>
+        <p class="footer-legal-note" data-i18n="footer.legalNote">ТОО «Alapa Finance» осуществляет деятельность в соответствии с законодательством Республики Казахстан.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="/website.js"></script>
+</body>
+</html>
